@@ -5,4 +5,4 @@ using `cheerio`
 - [x] Fetch data from url
 - [x] Apply css selector and print text
 - [x] Format text
-- [ ] Get user input from commandline and make it dynamic
+- [x] Get user input from commandline and make it dynamic

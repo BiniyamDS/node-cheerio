@@ -1,10 +1,13 @@
 const axios = require("axios");
 const cheerio = require("cheerio");
+const args = process.argv;
 
-const url = "http://books.toscrape.com/";
-const selector = "product_price";
+const url = args[2];
+const selector = args[3];
 
-async function getBody() {
+// console.log(args[2])
+// console.log(args[3])
+const getBody = async () => {
   try {
     const response = await axios.get(url);
     const $ = cheerio.load(response.data);
